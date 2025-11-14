@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Amazon Clone",
+    "description": "A fully responsive clone of Amazon's homepage, checkout page, order page and tracking page created using HTML, CSS and JavaScript.",
+    "github": "https://github.com/prashantmore45/Amazon-Clone",
+    "demo": "Coming Soon",
+    "image": "images/amazon clone.png"
+  },
+  {
+    "id": 2,
+    "title": "Tic Tac Toe Game",
+    "description": "A classic two-player game built with HTML, CSS, and JavaScript. Includes interactive game board, win detection logic, and a reset button for replayability.",
+    "github": "https://github.com/prashantmore45/Tic-Tac-Toe-Game",
+    "demo": "https://prashantmore45.github.io/Tic-Tac-Toe-Game/",
+    "image": "images/tictac.png"
+  },
+  {
+    "id": 3,
+    "title": "Rock Paper Scissors Game",
+    "description": "An interactive game where you play against the computer. Built using HTML, CSS, and JavaScript with real-time score tracking and dynamic result display.",
+    "github": "https://github.com/prashantmore45/Rock-Paper-Scissors-Game",
+    "demo": "https://prashantmore45.github.io/Rock-Paper-Scissors-Game/",
+    "image": "images/rockpaper.png"
+  },
+  {
+    "id": 4,
+    "title": "Simple Calculator",
+    "description": "A functional calculator built with HTML, CSS, and JavaScript. Supports basic arithmetic operations and a clean, responsive UI for smooth usage.",
+    "github": "https://github.com/prashantmore45/Simple-Calculator",
+    "demo": "https://prashantmore45.github.io/Simple-Calculator/",
+    "image": "images/simple cal.png"
+  },
+  {
+    "id": 5,
+    "title": "AI Image Generator",
+    "description": "A web application that generates images based on user prompts using OpenAI's DALL·E API. Built with HTML, CSS, and JavaScript.",
+    "github": "https://github.com/prashantmore45/AI-Image-Generator",
+    "demo": "https://ai-image-generator-vert-nine.vercel.app/",
+    "image": "images/aiimage.png"
+  },
+  {
+    "id": 6,
+    "title": "AI Chatbot",
+    "description": "A web-based AI chatbot application that utilizes Google Gemini's API to provide intelligent and context-aware responses to user queries. Built with HTML, CSS, and JavaScript.",
+    "github": "https://github.com/prashantmore45/AI---Chatbot",
+    "demo": "https://ai-chatbot-b8k7.onrender.com/",
+    "image": "images/aichatbot.png"
+  }
+]
