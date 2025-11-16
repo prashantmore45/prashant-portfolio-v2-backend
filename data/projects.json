@@ -44,7 +44,7 @@
     "title": "AI Chatbot",
     "description": "A web-based AI chatbot application that utilizes Google Gemini's API to provide intelligent and context-aware responses to user queries. Built with HTML, CSS, and JavaScript.",
     "github": "https://github.com/prashantmore45/AI---Chatbot",
-    "demo": "https://ai-chatbot-b8k7.onrender.com/",
+    "demo": "https://ai-chatbot-frontend-u8e6.onrender.com",
     "image": "images/aichatbot.png"
   }
 ]
