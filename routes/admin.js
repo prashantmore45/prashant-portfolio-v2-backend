@@ -11,9 +11,14 @@ const MESSAGES_PATH = path.join(__dirname, "../data/messages.json");
 const PROJECTS_PATH = path.join(__dirname, "../data/projects.json");
 const VISITORS_PATH = path.join(__dirname, "../data/visitors.json");
 
-const ADMIN_USER = process.env.ADMIN_USER || "admin";
-const ADMIN_PASS = process.env.ADMIN_PASS || "prashantmore45";
-const JWT_SECRET = process.env.JWT_SECRET || "change_this_secret_in_render_production";
+const ADMIN_USER = process.env.ADMIN_USER;
+const ADMIN_PASS = process.env.ADMIN_PASS;
+const JWT_SECRET = process.env.JWT_SECRET;
+
+if (!ADMIN_USER || !ADMIN_PASS || !JWT_SECRET) {
+  throw new Error("Admin environment variables are not set");
+}
+
 
 // helper to read json
 function readJson(filePath, fallback = []) {
