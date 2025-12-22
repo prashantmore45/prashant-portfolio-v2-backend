@@ -1,4 +1,5 @@
-// backend/routes/admin.js
+const Contact = require("../models/Contact");
+
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
@@ -71,22 +72,32 @@ function adminAuth(req, res, next) {
 // GET messages
 // GET /admin-api/messages
 // --------------------
-router.get("/messages", adminAuth, (req, res) => {
-  const messages = readJson(MESSAGES_PATH, []);
-  res.json(messages);
+router.get("/messages", adminAuth, async (req, res) => {
+  try {
+    const messages = await Contact.find().sort({ createdAt: -1 });
+    res.json(messages);
+  } catch (err) {
+    console.error("Fetch messages error:", err);
+    res.status(500).json({ ok: false, msg: "Server error" });
+  }
 });
+
 
 // --------------------
 // DELETE message
 // DELETE /admin-api/messages/:id
 // --------------------
-router.delete("/messages/:id", adminAuth, (req, res) => {
-  const id = Number(req.params.id);
-  let messages = readJson(MESSAGES_PATH, []);
-  const filtered = messages.filter(m => m.id !== id);
-  writeJson(MESSAGES_PATH, filtered);
-  res.json({ ok: true, remaining: filtered.length });
+router.delete("/messages/:id", adminAuth, async (req, res) => {
+  try {
+    const { id } = req.params;
+    await Contact.findByIdAndDelete(id);
+    res.json({ ok: true });
+  } catch (err) {
+    console.error("Delete message error:", err);
+    res.status(500).json({ ok: false, msg: "Server error" });
+  }
 });
+
 
 // --------------------
 // GET visitors count
