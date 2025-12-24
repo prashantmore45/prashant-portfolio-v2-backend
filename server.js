@@ -10,7 +10,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin: "https://prashantmore45.github.io/prashant-portfolio-v2"
+  origin: "https://prashantmore45.github.io"
 }));
 
 app.use(express.json());
